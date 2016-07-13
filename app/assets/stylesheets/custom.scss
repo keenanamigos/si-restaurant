@@ -1,4 +1,38 @@
+html {
+	height: 100%;
+}
+
+body {
+	background-image:url("starry.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%
+}
+
 #register {
 	color: white;
 }
+
+.center {
+	text-align: center;
+	h1 {
+		margin-bottom: 10px;
+	}
+}
+
+#welcome-text {
+	color: black !important;
+}
+
+#log-reg {
+	color: blue !important;
+	font-weight: bold;
+}
+
+.white {
+	color: white;
+}
+
+/*Add id's to specific elements that I don't want to have in white
+I don't want initial lettering in white or Log In (want this blue)
+I don't want submit button in white and I want 'sign up' text in white */
 
