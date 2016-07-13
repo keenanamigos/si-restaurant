@@ -26,7 +26,8 @@ gem 'bootstrap-sass'
 gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+gem 'awesome_print'
+gem 'pry-rails'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
