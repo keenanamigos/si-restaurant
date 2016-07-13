@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SiRestaurant</title>
+  <title>Keenan's Restaurant App</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -18,12 +18,9 @@
 	<nav class="navbar navbar-inverse">
 	  <div class="container">
 	    <div class="navbar-header">
-	      <%= link_to 'SI - Restaurant', root_path, class: 'navbar-brand' %>
+	      <%= link_to 'Home', root_path, class: 'navbar-brand' %>
 	    </div>
 	    <div id="navbar">
-	      <ul class="nav navbar-nav">
-	        <li><%= link_to 'Home', root_path %></li>
-	      </ul>
 	      <ul class="nav navbar-nav pull-right">
 	        <% if user_signed_in? %>
 	          <li class="dropdown">
