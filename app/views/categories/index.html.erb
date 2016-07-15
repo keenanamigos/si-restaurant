@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Categories</h1>
+<h1 class="white">Listing Categories</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th class="white">Title</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -13,10 +13,10 @@
   <tbody>
     <% @categories.each do |category| %>
       <tr>
-        <td><%= category.title %></td>
-        <td><%= link_to 'Show', category %></td>
-        <td><%= link_to 'Edit', edit_category_path(category) %></td>
-        <td><%= link_to 'Destroy', category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="white"><%= category.title %><span>&nbsp;</span></td>
+        <td><%= link_to 'Show', category, class: 'white' %></td>
+        <td><%= link_to 'Edit', edit_category_path(category), class: 'white' %></td>
+        <td><%= link_to 'Destroy', category, class: 'white', method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Category', new_category_path %>
+<%= link_to 'New Category', new_category_path, class: 'white' %>
