@@ -29,7 +29,11 @@ body {
 }
 
 .white {
-	color: white;
+	color: white !important;
+}
+
+.black {
+	color: black;
 }
 
 #forgot-pass {
