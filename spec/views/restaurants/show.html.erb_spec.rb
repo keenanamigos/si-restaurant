@@ -8,7 +8,8 @@ RSpec.describe "restaurants/show", type: :view do
       :city => "City",
       :state => "State",
       :zip => "Zip",
-      :category_id => 2
+      :category_id => 2,
+      :user_id => 3
     ))
   end
 
@@ -20,5 +21,6 @@ RSpec.describe "restaurants/show", type: :view do
     expect(rendered).to match(/State/)
     expect(rendered).to match(/Zip/)
     expect(rendered).to match(/2/)
+    expect(rendered).to match(/3/)
   end
 end

@@ -8,7 +8,8 @@ RSpec.describe "restaurants/edit", type: :view do
       :city => "MyString",
       :state => "MyString",
       :zip => "MyString",
-      :category_id => 1
+      :category_id => 1,
+      :user_id => 1
     ))
   end
 
@@ -28,6 +29,8 @@ RSpec.describe "restaurants/edit", type: :view do
       assert_select "input#restaurant_zip[name=?]", "restaurant[zip]"
 
       assert_select "input#restaurant_category_id[name=?]", "restaurant[category_id]"
+
+      assert_select "input#restaurant_user_id[name=?]", "restaurant[user_id]"
     end
   end
 end
