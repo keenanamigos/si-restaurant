@@ -6,6 +6,7 @@ class CreateRestaurants < ActiveRecord::Migration
       t.string :city
       t.string :state
       t.string :zip
+      t.integer :category_id
 
       t.timestamps null: false
     end
