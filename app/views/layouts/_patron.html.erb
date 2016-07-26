@@ -6,6 +6,9 @@
   			Categories
     		</button>
     		<div class="dropdown-menu">
+          <% @category.each do |c| %>
+            <li><%= c.title %></li>
+          <% end %>
     		</div>
   </div>
 	</div>
